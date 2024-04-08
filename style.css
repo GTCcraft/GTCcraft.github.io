@@ -1,0 +1,192 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --nav-height: 50px;
+  --very-pink: #FF4E91;
+  --very-blue: #0858D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: deepskyblue;
+  color: var(--very-blue);
+  font-family: rubik;
+}
+
+li::marker {
+  content: "♥ ";
+  color: var(--very-blue);
+}
+
+a {
+  color: var(--very-blue);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--very-pink);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--very-pink);
+  text-decoration-style: wavy;
+}
+
+b {
+  color: var(--very-blue);
+}
+
+li {
+  margin-left: 20px;
+  color: var(--very-pink);
+}
+
+nav {
+  background-color: var(--very-pink);
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-family: rubik;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-bar {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box {
+  background-color: #FBE1BF;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.wide {
+  width: auto;
+}
+
+.thin {
+  width: 20%;
+}
+
+#my-logo {
+  padding: 20px;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--nav-height);
+}
+
+#homepage-center-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  height: auto;
+}
+
+.ceramics-project {
+  display: flex;
+  background: red;
+}
+
+.ceramics-photo {
+  width: 100px;
+  height: 100px;
+}
+
+#questionspage {
+  display: none;
+}
+
+#postspage {
+  display: none;
+}
+
+.art-photo {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#popupWindow {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+
+  background-color: rgb(5, 39, 77);
+  background-color: rgba(5, 39, 77, 0.4);
+}
+
+#popupBox {
+  background-color: var(--very-pink);
+  margin: 50px auto;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+}
+
+
+/*<--SCROLLBAR------------------------------------->
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightpink;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1C88FF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0858D5;
+}
