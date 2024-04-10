@@ -37,18 +37,20 @@ $(document).ready(function() {
     currentPage.style.display = "flex";
   }
 
-  function openImage(clickedImage) {
-    popupWindow.style.display = "block";
-    $('#popupBox').html('<img src="' + clickedImage.attr('src') + '" width="100%" height="100%">');
-  }
-  $("#popupWindow").click(function closeImage() {
-    popupWindow.style.display = "none";
-    console.log("girl");
-  });
-
-  $('img').click(function() {
-    openImage($(this));
-  });
+  /*  function openImage(clickedImage) {
+      popupWindow.style.display = "block";
+      $('#popupBox').html('<img src="' + clickedImage.attr('src') + '" width="100%" height="100%">');
+    }
+    $("#popupWindow").click(function closeImage() {
+      popupWindow.style.display = "none";
+      console.log("girl");
+    });
+   
+  
+    $('img').click(function() {
+      openImage($(this));
+    });
+     */
 
   homeButton.click(function() {
     changeScreen(homepage);
